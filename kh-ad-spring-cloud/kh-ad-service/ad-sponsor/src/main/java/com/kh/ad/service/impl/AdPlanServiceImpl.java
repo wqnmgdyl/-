@@ -49,7 +49,7 @@ public class AdPlanServiceImpl implements IAdPlanService {
 
         AdPlan oldPlan = adPlanDao.findByUserIdAndPlanName(request.getUserId(), request.getPlanName());
         if (oldPlan != null) {
-            throw new AdException(Constants.ErrorMsg.SAME_NAME_PLAM_ERROR);
+            throw new AdException(Constants.ErrorMsg.SAME_NAME_PLAN_ERROR);
         }
 
         AdPlan newAdPlan = adPlanDao.save(new AdPlan(request.getUserId(), request.getPlanName(),
