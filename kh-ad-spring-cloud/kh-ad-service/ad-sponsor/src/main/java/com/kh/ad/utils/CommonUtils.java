@@ -12,7 +12,7 @@ import java.util.Date;
 public class CommonUtils {
 
     private static String[] parsePatterns = {
-            "yyyy-MM-dd", "yyyy-/MM/dd", "yyyy.MM.dd"
+            "yyyy-MM-dd", "yyyy/MM/dd", "yyyy.MM.dd"
     };
 
     public static String md5(String value) {
