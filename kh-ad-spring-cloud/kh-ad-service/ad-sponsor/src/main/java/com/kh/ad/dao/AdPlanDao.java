@@ -25,7 +25,7 @@ public interface AdPlanDao extends JpaRepository<AdPlan, Long> {
      * @param userId
      * @return
      */
-    List<AdPlan> findAllByIdInAAndUserId(List<Long> ids, Long userId);
+    List<AdPlan> findAllByIdInAndUserId(List<Long> ids, Long userId);
 
     /**
      * 根据userId和planName查询
