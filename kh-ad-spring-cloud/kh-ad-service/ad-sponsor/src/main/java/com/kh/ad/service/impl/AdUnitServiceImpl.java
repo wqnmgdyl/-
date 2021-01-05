@@ -17,12 +17,10 @@ import com.kh.ad.entity.unit_condition.CreativeUnit;
 import com.kh.ad.exception.AdException;
 import com.kh.ad.service.IAdUnitService;
 import com.kh.ad.vo.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import java.util.*;
-import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collectors;
 
 /**
@@ -136,20 +134,20 @@ public class AdUnitServiceImpl implements IAdUnitService {
     @Override
     public CreativeUnitResponse createCreativeUnit(CreativeUnitRequest request) throws AdException {
         List<Long> unitIds = request.getUnitItems().stream().
-                map(CreativeUnitRequest.CreativeUnitItem ::getUnitId).
+                map(CreativeUnitRequest.CreativeUnitItem::getUnitId).
                 collect(Collectors.toList());
 
         List<Long> creativeIds = request.getUnitItems().stream().
-                map(CreativeUnitRequest.CreativeUnitItem :: getCreativeId).
+                map(CreativeUnitRequest.CreativeUnitItem::getCreativeId).
                 collect(Collectors.toList());
 
-        if(!(isRelatedUnitExist(unitIds) && isRelatedCreativeExist(creativeIds))) {
+        if (!(isRelatedUnitExist(unitIds) && isRelatedCreativeExist(creativeIds))) {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
 
         List<CreativeUnit> creativeUnits = new ArrayList<>();
         request.getUnitItems().forEach(i -> creativeUnits.add(
-                new CreativeUnit(i.getCreativeId(),i.getUnitId())
+                new CreativeUnit(i.getCreativeId(), i.getUnitId())
         ));
         List<Long> ids = creativeUnitDao.saveAll(creativeUnits).stream().
                 map(CreativeUnit::getId).

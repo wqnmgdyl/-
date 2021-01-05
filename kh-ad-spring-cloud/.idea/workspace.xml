@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/vo/CreativeUnitRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/vo/CreativeUnitResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeMetrialType.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeMetrialType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitKeyword.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/IAdUnitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/IAdUnitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/IUserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/vo/AdUnitDistrictRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/vo/AdUnitDistrictRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/vo/AdUnitItRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/vo/AdUnitItRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +215,7 @@
       <workItem from="1609737457214" duration="267000" />
       <workItem from="1609737728212" duration="4333000" />
       <workItem from="1609743998435" duration="9470000" />
-      <workItem from="1609807665624" duration="8786000" />
+      <workItem from="1609807665624" duration="9329000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -254,11 +259,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609815660847</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="创意与推广单元关联服务功能实现">
+      <created>1609817024046</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609817024046</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -304,7 +326,8 @@
     <MESSAGE value="推广单元服务功能实现" />
     <MESSAGE value="推广单元限制服务功能实现" />
     <MESSAGE value="创意服务功能实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="创意服务功能实现" />
+    <MESSAGE value="创意与推广单元关联服务功能实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="创意与推广单元关联服务功能实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -327,14 +350,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609309062755" />
-    <state x="58" y="139" key="CommitChangelistDialog2" timestamp="1609815659744">
+    <state x="58" y="139" key="CommitChangelistDialog2" timestamp="1609817447237">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="58" y="139" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609815659744" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609815754574">
+    <state x="58" y="139" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609817447237" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609817156345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609815754574" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609817156345" />
     <state x="497" y="291" key="FileChooserDialogImpl" timestamp="1609745654049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -391,14 +414,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="220" height="477" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1609734488609" />
+    <state x="622" y="231" key="RollbackChangesDialog" timestamp="1609817120082">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="622" y="231" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609817120082" />
     <state x="461" y="162" key="SettingsEditor" timestamp="1609745663997">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609745663997" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609815672639">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609817064405">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609815672639" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609817064405" />
     <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1609807694354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -1,6 +1,5 @@
 package com.kh.ad.service;
 
-import com.kh.ad.entity.AdUnit;
 import com.kh.ad.exception.AdException;
 import com.kh.ad.vo.*;
 
@@ -10,6 +9,7 @@ import com.kh.ad.vo.*;
 public interface IAdUnitService {
     /**
      * 创建推广单元
+     *
      * @param request
      * @return
      * @throws AdException
@@ -18,6 +18,7 @@ public interface IAdUnitService {
 
     /**
      * 创建推广单元关键字
+     *
      * @param request
      * @return
      * @throws AdException
@@ -26,6 +27,7 @@ public interface IAdUnitService {
 
     /**
      * 创建推广单元兴趣标签
+     *
      * @param request
      * @return
      * @throws AdException
@@ -34,6 +36,7 @@ public interface IAdUnitService {
 
     /**
      * 创建推广单元地域限制
+     *
      * @param request
      * @return
      * @throws AdException
@@ -42,6 +45,7 @@ public interface IAdUnitService {
 
     /**
      * 创建推广单元和创意的关联
+     *
      * @param request
      * @return
      * @throws AdException

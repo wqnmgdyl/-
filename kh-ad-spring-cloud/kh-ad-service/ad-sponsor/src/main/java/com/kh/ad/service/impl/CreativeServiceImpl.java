@@ -9,7 +9,6 @@ import com.kh.ad.exception.AdException;
 import com.kh.ad.service.ICreativeService;
 import com.kh.ad.vo.CreativeRequest;
 import com.kh.ad.vo.CreativeResponse;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;

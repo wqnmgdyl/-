@@ -1,6 +1,5 @@
 package com.kh.ad.entity.unit_condition;
 
-import com.kh.ad.exception.AdException;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

@@ -1,6 +1,5 @@
 package com.kh.ad.vo;
 
-import com.kh.ad.entity.unit_condition.AdUnitDistrict;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

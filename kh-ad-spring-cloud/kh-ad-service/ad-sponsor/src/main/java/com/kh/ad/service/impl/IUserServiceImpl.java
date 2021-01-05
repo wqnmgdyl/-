@@ -9,8 +9,6 @@ import com.kh.ad.utils.CommonUtils;
 import com.kh.ad.vo.CreateUserRequest;
 import com.kh.ad.vo.CreateUserResponse;
 import lombok.extern.slf4j.Slf4j;
-import lombok.val;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -31,19 +29,19 @@ public class IUserServiceImpl implements IUserService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public CreateUserResponse createUser(CreateUserRequest request) throws AdException {
-        if(!request.volidate()) {
+        if (!request.volidate()) {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
 
         AdUser oldUser = adUserDao.findByUsername(request.getUsername());
-        if(oldUser != null) {
+        if (oldUser != null) {
             throw new AdException(Constants.ErrorMsg.SAME_NAME_ERROR);
         }
 
         AdUser newUser = adUserDao.save(new AdUser(request.getUsername(),
                 CommonUtils.md5(request.getUsername())));
 
-        return new CreateUserResponse(newUser.getId(),newUser.getUsername(),newUser.getToken(),
-                newUser.getCreateTime(),newUser.getUpdateTime());
+        return new CreateUserResponse(newUser.getId(), newUser.getUsername(), newUser.getToken(),
+                newUser.getCreateTime(), newUser.getUpdateTime());
     }
 }
