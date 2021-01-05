@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/vo/AdPlan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/vo/AdPlanGetRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/SponsorClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/SponsorClientHystrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/SearchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/SearchApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/controller/SearchController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/controller/SearchController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +79,7 @@
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeType.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdPlanServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/controller/SearchController.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" root0="SKIP_INSPECTION" />
   </component>
@@ -121,6 +121,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.kh.ad.client" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -214,7 +219,7 @@
       <workItem from="1609737457214" duration="267000" />
       <workItem from="1609737728212" duration="4333000" />
       <workItem from="1609743998435" duration="9470000" />
-      <workItem from="1609807665624" duration="21359000" />
+      <workItem from="1609807665624" duration="22207000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -300,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609830548017</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="基于Ribbon实现微服务调用">
+      <created>1609831548772</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1609831548772</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +377,8 @@
     <MESSAGE value="完成服务Controller的编写" />
     <MESSAGE value="网关配置" />
     <MESSAGE value="广告检索系统子模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="广告检索系统子模块" />
+    <MESSAGE value="基于Ribbon实现微服务调用" />
+    <option name="LAST_COMMIT_MESSAGE" value="基于Ribbon实现微服务调用" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -384,22 +397,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="170" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609734579515" />
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1609816284444">
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1609832189413">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609816284444" />
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609832189413" />
     <state x="100" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609830755399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609830755399" />
-    <state x="58" y="139" key="CommitChangelistDialog2" timestamp="1609830547096">
+    <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609831829064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="58" y="139" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609830547096" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609826552884">
+    <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
+    <state x="58" y="139" key="CommitChangelistDialog2" timestamp="1609831547829">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609826552884" />
+    <state x="58" y="139" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609831547829" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609831679321">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609831679321" />
     <state x="497" y="291" key="FileChooserDialogImpl" timestamp="1609745654049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -464,10 +481,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609745663997" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609830579194">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609831611404">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609830579194" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609831611404" />
     <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1609807694354">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
