@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/IndexAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adplan/AdPlanIndex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adplan/AdPlanObject.java" afterDir="false" />
+    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="推广计划索引对象定义与服务实现">
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adunit/AdUnitIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adunit/AdUnitObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +214,8 @@
       <workItem from="1609737728212" duration="4333000" />
       <workItem from="1609743998435" duration="9470000" />
       <workItem from="1609807665624" duration="23150000" />
-      <workItem from="1609836038626" duration="3074000" />
+      <workItem from="1609836038626" duration="3554000" />
+      <workItem from="1609894604287" duration="2785000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -315,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609832328988</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="推广计划索引对象定义与服务实现">
+      <created>1609839517984</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1609839517984</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -382,7 +389,8 @@
     <MESSAGE value="广告检索系统子模块" />
     <MESSAGE value="基于Ribbon实现微服务调用" />
     <MESSAGE value="基于Feign实现微服务调用" />
-    <option name="LAST_COMMIT_MESSAGE" value="基于Feign实现微服务调用" />
+    <MESSAGE value="推广计划索引对象定义与服务实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="推广计划索引对象定义与服务实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -401,10 +409,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="170" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609734579515" />
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1609839123282">
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1609898985407">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609839123282" />
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1609898985407" />
     <state x="100" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609830755399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -413,14 +421,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="58" y="139" key="CommitChangelistDialog2" timestamp="1609832328099">
+    <state x="328" y="228" key="CommitChangelistDialog2" timestamp="1609894895098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="58" y="139" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609832328099" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609831679321">
+    <state x="328" y="228" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609894895098" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609894979401">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609831679321" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609894979401" />
     <state x="497" y="291" key="FileChooserDialogImpl" timestamp="1609745654049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -485,18 +493,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609745663997" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609832358639">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609895091638">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609832358639" />
-    <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1609836052946">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609895091638" />
+    <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1609894676308">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="351" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609836052946" />
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609836100642">
+    <state x="351" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609894676308" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609894916175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609836100642" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609894916175" />
     <state x="688" y="311" key="git4idea.merge.GitPullDialog" timestamp="1609745745142">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -513,10 +521,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609828787419" />
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1609811665844">
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1609899120988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609811665844" />
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609899120988" />
     <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1609745694064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
