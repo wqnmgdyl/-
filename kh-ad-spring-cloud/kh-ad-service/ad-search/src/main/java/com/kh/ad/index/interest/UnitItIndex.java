@@ -63,7 +63,7 @@ public class UnitItIndex implements IndexAware<String, Set<Long>> {
         log.info("UnitItIndex, before delete: {}", unitItMap);
         Set<Long> unitIds = CommonUtils.getOrCreate(key, itUnitMap,
                 ConcurrentSkipListSet::new);
-        unitIds.remove(value);
+        unitIds.removeAll(value);
         for (Long unitId : value) {
             Set<String> itTagSet = CommonUtils.getOrCreate(unitId, unitItMap,
                     ConcurrentSkipListSet::new);
