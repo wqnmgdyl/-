@@ -15,8 +15,6 @@ public class BinlogServiceTest {
     public static void main(String[] args) throws IOException {
         BinaryLogClient client = new BinaryLogClient("127.0.0.1",3306,
                 "root","520604");
-        //client.setBinlogFilename();
-        //client.setBinlogPosition();
 
         client.registerEventListener(event -> {
             EventData data = event.getData();
