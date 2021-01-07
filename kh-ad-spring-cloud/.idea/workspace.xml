@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/BinlogRowData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/listener/AggregationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/listener/IListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/MySqlRowData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/listener/IncrementListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/sender/ISender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/constant/OpType.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/constant/OpType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +233,7 @@
       <workItem from="1609807665624" duration="23150000" />
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
-      <workItem from="1609981056797" duration="13547000" />
+      <workItem from="1609981056797" duration="16609000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -485,7 +487,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609999702543</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="Binlog监听与解析的实现">
+      <created>1610003207967</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1610003207967</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -540,7 +549,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="网关配置" />
     <MESSAGE value="广告检索系统子模块" />
     <MESSAGE value="基于Ribbon实现微服务调用" />
     <MESSAGE value="基于Feign实现微服务调用" />
@@ -565,7 +573,8 @@
     <MESSAGE value="实现对模板对象的解析" />
     <MESSAGE value="去除无用代码" />
     <MESSAGE value="载入模板文件并实现列索引到列名的映射" />
-    <option name="LAST_COMMIT_MESSAGE" value="载入模板文件并实现列索引到列名的映射" />
+    <MESSAGE value="Binlog监听与解析的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="Binlog监听与解析的实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -584,10 +593,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="170" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609734579515" />
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1610001016493">
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1610005721327">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610001016493" />
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610005721327" />
     <state x="100" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609830755399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -596,14 +605,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609999701672">
+    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1610006395335">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609999701672" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1610000868498">
+    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610006395335" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1610004321536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610000868498" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610004321536" />
     <state x="497" y="291" key="FileChooserDialogImpl" timestamp="1609745654049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -696,10 +705,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="228" y="354" width="1250" height="617" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1609829480626" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1609828787419">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1610003576887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609828787419" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610003576887" />
     <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1609998821531">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
