@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/service/BinlogServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/CommonResponseDataAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/CommonResponseDataAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/GlobalExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/GlobalExceptionAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/vo/CommonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/vo/CommonResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/SponsorClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/SponsorClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/handler/AdLevelDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/handler/AdLevelDataHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/IndexFileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/IndexFileLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adplan/AdPlanIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adplan/AdPlanIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/district/UnitDistrictIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/district/UnitDistrictIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeMetrialType.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeMaterialType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +132,20 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SponsorApplication">
+  <component name="RunManager" selected="Application.BinlogServiceTest">
+    <configuration name="BinlogServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kh.ad.service.BinlogServiceTest" />
+      <module name="ad-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kh.ad.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EurekaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ad-eureka" />
       <extension name="coverage">
@@ -179,6 +181,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BinlogServiceTest" />
         <item itemvalue="Spring Boot.ZuulGateWayApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
       </list>
@@ -226,7 +229,7 @@
       <workItem from="1609807665624" duration="23150000" />
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
-      <workItem from="1609981056797" duration="3304000" />
+      <workItem from="1609981056797" duration="4923000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -438,7 +441,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609983905651</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="格式化">
+      <created>1609985129206</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1609985129206</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +507,6 @@
     <MESSAGE value="推广单元限制服务功能实现" />
     <MESSAGE value="创意服务功能实现" />
     <MESSAGE value="创意与推广单元关联服务功能实现" />
-    <MESSAGE value="格式化" />
     <MESSAGE value="完成服务Controller的编写" />
     <MESSAGE value="网关配置" />
     <MESSAGE value="广告检索系统子模块" />
@@ -518,7 +527,8 @@
     <MESSAGE value="第三层级索引操作的实现" />
     <MESSAGE value="第四层级索引操作的实现" />
     <MESSAGE value="全量索引加载的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="全量索引加载的实现" />
+    <MESSAGE value="格式化" />
+    <option name="LAST_COMMIT_MESSAGE" value="格式化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -549,10 +559,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609983904759">
+    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609985127258">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609983904759" />
+    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609985127258" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609923965435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -621,10 +631,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609745663997" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609983924049">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609985133530">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609983924049" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609985133530" />
     <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1609981091503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
