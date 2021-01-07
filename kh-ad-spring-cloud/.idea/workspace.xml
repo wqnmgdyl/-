@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/JsonTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/TableTemplate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/template.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/ParseTemplate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/TableTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/TableTemplate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +230,7 @@
       <workItem from="1609807665624" duration="23150000" />
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
-      <workItem from="1609981056797" duration="5751000" />
+      <workItem from="1609981056797" duration="7051000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -458,7 +456,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609987213659</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="构造解析Binlog使用到的模板文件">
+      <created>1609988285059</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1609988285059</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -513,7 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="推广单元限制服务功能实现" />
     <MESSAGE value="创意服务功能实现" />
     <MESSAGE value="创意与推广单元关联服务功能实现" />
     <MESSAGE value="完成服务Controller的编写" />
@@ -538,7 +542,8 @@
     <MESSAGE value="全量索引加载的实现" />
     <MESSAGE value="格式化" />
     <MESSAGE value="使用开源工具监听Binlog" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用开源工具监听Binlog" />
+    <MESSAGE value="构造解析Binlog使用到的模板文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="构造解析Binlog使用到的模板文件" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -569,10 +574,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609987212824">
+    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609988284079">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609987212824" />
+    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609988284079" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609923965435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

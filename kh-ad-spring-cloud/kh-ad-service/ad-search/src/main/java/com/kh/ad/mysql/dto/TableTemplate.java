@@ -19,6 +19,9 @@ public class TableTemplate {
     private String tableName;
     private String level;
 
+    /**
+     * List<String>对应到多个列
+     */
     private Map<OpType, List<String>> opTypeFieldSetMap = new HashMap<>();
     /**
      * 字段索引 -> 字段名
