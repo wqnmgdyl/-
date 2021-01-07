@@ -6,7 +6,7 @@ import lombok.Getter;
  * @author han.ke
  */
 @Getter
-public enum CreativeMetrialType {
+public enum CreativeMaterialType {
 
     JPG(1, "jpg"),
     BMP(2, "bmp"),
@@ -17,7 +17,7 @@ public enum CreativeMetrialType {
     private int type;
     private String desc;
 
-    CreativeMetrialType(int type, String desc) {
+    CreativeMaterialType(int type, String desc) {
         this.type = type;
         this.desc = desc;
     }

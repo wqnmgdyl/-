@@ -79,7 +79,7 @@ public class AdLevelDataHandler {
     }
 
     public static void handleLevel3(AdCreativeUnitTable creativeUnitTable, OpType type) {
-        if(type == OpType.UPDATE) {
+        if (type == OpType.UPDATE) {
             log.error("CreativeUnitIndex not support update");
             return;
         }
@@ -87,14 +87,14 @@ public class AdLevelDataHandler {
                 get(creativeUnitTable.getUnitId());
         CreativeObject creativeObject = DataTable.of(CreativeIndex.class).
                 get(creativeUnitTable.getAdId());
-        if(null == unitObject || null == creativeObject) {
+        if (null == unitObject || null == creativeObject) {
             log.error("AdCreativeUnitTable index error: {}",
                     JSON.toJSONString(creativeUnitTable));
             return;
         }
         CreativeUnitObject creativeUnitObject = new CreativeUnitObject(
-                    creativeUnitTable.getAdId(),
-                    creativeUnitTable.getUnitId());
+                creativeUnitTable.getAdId(),
+                creativeUnitTable.getUnitId());
         handleBinLogEvent(DataTable.of(CreativeUnitIndex.class),
                 CommonUtils.stringConcat(creativeUnitObject.getAdId().toString(),
                         creativeUnitObject.getUnitId().toString()),
@@ -105,15 +105,15 @@ public class AdLevelDataHandler {
 
     public static void handleLevel4(AdUnitDistrictTable unitDistrictTable,
                                     OpType type) {
-        if(type == OpType.UPDATE) {
+        if (type == OpType.UPDATE) {
             log.error("district index can not support update");
             return;
         }
 
         AdUnitObject unitObject = DataTable.of(AdUnitIndex.class).
                 get(unitDistrictTable.getUnitId());
-        if(unitObject == null) {
-            log.error("AdUnitDistrictTable index error: {}",unitDistrictTable.getUnitId());
+        if (unitObject == null) {
+            log.error("AdUnitDistrictTable index error: {}", unitDistrictTable.getUnitId());
             return;
         }
         String key = CommonUtils.stringConcat(
@@ -123,18 +123,18 @@ public class AdLevelDataHandler {
                 Collections.singleton(unitDistrictTable.getUnitId())
         );
         handleBinLogEvent(DataTable.of(UnitDistrictIndex.class),
-                key,value,type);
+                key, value, type);
     }
 
-    public static void handleLevel4(AdUnitItTable unitItTable,OpType type) {
-        if(type == OpType.UPDATE) {
+    public static void handleLevel4(AdUnitItTable unitItTable, OpType type) {
+        if (type == OpType.UPDATE) {
             log.error("it index can not support update");
             return;
         }
         AdUnitObject unitObject = DataTable.of(AdUnitIndex.class).
                 get(unitItTable.getUnitId());
-        if(unitObject == null) {
-            log.error("AdUnitItTable index error: {}",unitItTable.getUnitId());
+        if (unitObject == null) {
+            log.error("AdUnitItTable index error: {}", unitItTable.getUnitId());
             return;
         }
         Set<Long> value = new HashSet<>(Collections.singleton(unitItTable.getUnitId()));
@@ -144,13 +144,13 @@ public class AdLevelDataHandler {
                 type);
     }
 
-    public static void handleLevel4(AdUnitKeywordTable keywordTable,OpType type) {
-        if(type == OpType.UPDATE) {
+    public static void handleLevel4(AdUnitKeywordTable keywordTable, OpType type) {
+        if (type == OpType.UPDATE) {
             log.error("keyword index can not support update");
             return;
         }
         AdUnitObject unitObject = DataTable.of(AdUnitIndex.class).get(keywordTable.getUnitId());
-        if(unitObject == null) {
+        if (unitObject == null) {
             log.error("AdUnitKeywordTable index error: {}",
                     keywordTable.getUnitId());
             return;

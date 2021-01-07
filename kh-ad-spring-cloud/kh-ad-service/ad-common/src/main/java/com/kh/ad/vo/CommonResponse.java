@@ -7,9 +7,8 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * Create by KeHan
- *
  * @param <T>
+ * @author han.ke
  */
 @Data
 @NoArgsConstructor

@@ -29,27 +29,27 @@ public class AdPlanIndex implements IndexAware<Long, AdPlanObject> {
 
     @Override
     public void add(Long key, AdPlanObject value) {
-        log.info("before add: {}",objectMap);
-        objectMap.put(key,value);
-        log.info("after add: {}",objectMap);
+        log.info("before add: {}", objectMap);
+        objectMap.put(key, value);
+        log.info("after add: {}", objectMap);
     }
 
     @Override
     public void update(Long key, AdPlanObject value) {
-        log.info("before update: {}",objectMap);
+        log.info("before update: {}", objectMap);
         AdPlanObject oldObject = objectMap.get(key);
-        if(null == oldObject) {
+        if (null == oldObject) {
             objectMap.put(key, value);
         } else {
             oldObject.update(value);
         }
-        log.info("after update: {}",objectMap);
+        log.info("after update: {}", objectMap);
     }
 
     @Override
     public void delete(Long key, AdPlanObject value) {
-        log.info("before delete: {}",objectMap);
+        log.info("before delete: {}", objectMap);
         objectMap.remove(key);
-        log.info("after delete: {}",objectMap);
+        log.info("after delete: {}", objectMap);
     }
 }

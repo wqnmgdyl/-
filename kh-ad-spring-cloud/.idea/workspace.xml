@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="第四层级索引操作的实现">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/IndexFileLoader.java" afterDir="false" />
+    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/CommonResponseDataAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/CommonResponseDataAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/GlobalExceptionAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/advice/GlobalExceptionAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/vo/CommonResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/vo/CommonResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/SponsorClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/client/SponsorClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/handler/AdLevelDataHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/handler/AdLevelDataHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/IndexFileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/IndexFileLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adplan/AdPlanIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adplan/AdPlanIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/district/UnitDistrictIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/district/UnitDistrictIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeMetrialType.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeMaterialType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +226,7 @@
       <workItem from="1609807665624" duration="23150000" />
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
-      <workItem from="1609981056797" duration="2105000" />
+      <workItem from="1609981056797" duration="3304000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -420,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609925872834</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="全量索引加载的实现">
+      <created>1609983905651</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1609983905651</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -475,7 +493,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="推广计划服务功能实现" />
     <MESSAGE value="推广单元服务功能实现" />
     <MESSAGE value="推广单元限制服务功能实现" />
     <MESSAGE value="创意服务功能实现" />
@@ -500,7 +517,8 @@
     <MESSAGE value="第二层级索引操作的实现" />
     <MESSAGE value="第三层级索引操作的实现" />
     <MESSAGE value="第四层级索引操作的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="第四层级索引操作的实现" />
+    <MESSAGE value="全量索引加载的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="全量索引加载的实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -511,10 +529,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1609819883894" />
-    <state x="170" y="172" key="#Project_Structure" timestamp="1609917477010">
+    <state x="170" y="172" key="#Project_Structure" timestamp="1609984831137">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="170" y="172" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609917477010" />
+    <state x="170" y="172" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1609984831137" />
     <state x="170" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609734579515">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -531,10 +549,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="593" y="59" key="CommitChangelistDialog2" timestamp="1609926476668">
+    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609983904759">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="593" y="59" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609926476668" />
+    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609983904759" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609923965435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -603,10 +621,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1609745663997" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609917618335">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1609983924049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609917618335" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1609983924049" />
     <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1609981091503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

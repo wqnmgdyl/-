@@ -27,7 +27,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.accessibility.AccessibleAction;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -62,13 +61,13 @@ public class DumpDataService {
 
     @Test
     public void dumpAdTableData() {
-        dumpAdPlanTable(String.format("%s%s", DConstant.DATA_ROOT_DIR,DConstant.AD_PLAN));
-        dumpAdUnitTable(String.format("%s%s", DConstant.DATA_ROOT_DIR,DConstant.AD_UNIT));
-        dumpAdUnitItTable(String.format("%s%s", DConstant.DATA_ROOT_DIR,DConstant.AD_UNIT_IT));
-        dumpAdUnitKeywordTable(String.format("%s%s", DConstant.DATA_ROOT_DIR,DConstant.AD_UNIT_KEYWORD));
-        dumpAdUnitDistrictTable(String.format("%s%s", DConstant.DATA_ROOT_DIR,DConstant.AD_UNIT_DISTRICT));
-        dumpAdCreativeTable(String.format("%s%s", DConstant.DATA_ROOT_DIR,DConstant.AD_CREATIVE));
-        dumpAdCreativeUnitTable(String.format("%s%s", DConstant.DATA_ROOT_DIR,DConstant.AD_CREATIVE_UNIT));
+        dumpAdPlanTable(String.format("%s%s", DConstant.DATA_ROOT_DIR, DConstant.AD_PLAN));
+        dumpAdUnitTable(String.format("%s%s", DConstant.DATA_ROOT_DIR, DConstant.AD_UNIT));
+        dumpAdUnitItTable(String.format("%s%s", DConstant.DATA_ROOT_DIR, DConstant.AD_UNIT_IT));
+        dumpAdUnitKeywordTable(String.format("%s%s", DConstant.DATA_ROOT_DIR, DConstant.AD_UNIT_KEYWORD));
+        dumpAdUnitDistrictTable(String.format("%s%s", DConstant.DATA_ROOT_DIR, DConstant.AD_UNIT_DISTRICT));
+        dumpAdCreativeTable(String.format("%s%s", DConstant.DATA_ROOT_DIR, DConstant.AD_CREATIVE));
+        dumpAdCreativeUnitTable(String.format("%s%s", DConstant.DATA_ROOT_DIR, DConstant.AD_CREATIVE_UNIT));
     }
 
     private void dumpAdPlanTable(String fileName) {
@@ -84,13 +83,13 @@ public class DumpDataService {
                         p.getStartDate(), p.getEndDate())
         ));
         Path path = Paths.get(fileName);
-        try(BufferedWriter writer = Files.newBufferedWriter(path)){
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (AdPlanTable planTable : planTables) {
                 writer.write(JSON.toJSONString(planTable));
                 writer.newLine();
             }
             writer.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             log.error("dumpAdPlanTable error");
         }
     }
@@ -105,16 +104,16 @@ public class DumpDataService {
         List<AdUnitTable> unitTables = new ArrayList<>();
         adUnits.forEach(u -> unitTables.add(
                 new AdUnitTable(u.getId(), u.getUnitStatus(),
-                        u.getPositionType(),u.getPlanId())
+                        u.getPositionType(), u.getPlanId())
         ));
         Path path = Paths.get(fileName);
-        try(BufferedWriter writer = Files.newBufferedWriter(path)){
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (AdUnitTable unitTable : unitTables) {
                 writer.write(JSON.toJSONString(unitTable));
                 writer.newLine();
             }
             writer.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             log.error("dumpAdUnitTable error");
         }
     }
@@ -126,17 +125,17 @@ public class DumpDataService {
         }
         List<AdCreativeTable> creativeTables = new ArrayList<>();
         creatives.forEach(c -> creativeTables.add(
-                new AdCreativeTable(c.getId(),c.getName(),c.getType(),c.getMaterialType(),
-                        c.getHeight(),c.getWidth(),c.getAuditStatus(),c.getUrl())
+                new AdCreativeTable(c.getId(), c.getName(), c.getType(), c.getMaterialType(),
+                        c.getHeight(), c.getWidth(), c.getAuditStatus(), c.getUrl())
         ));
         Path path = Paths.get(fileName);
-        try(BufferedWriter writer = Files.newBufferedWriter(path)){
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (AdCreativeTable creativeTable : creativeTables) {
                 writer.write(JSON.toJSONString(creativeTable));
                 writer.newLine();
             }
             writer.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             log.error("dumpAdCreativeTable error");
         }
     }
@@ -148,16 +147,16 @@ public class DumpDataService {
         }
         List<AdUnitItTable> unitItTables = new ArrayList<>();
         unitIts.forEach(i -> unitItTables.add(
-                new AdUnitItTable(i.getUnitId(),i.getItTag())
+                new AdUnitItTable(i.getUnitId(), i.getItTag())
         ));
         Path path = Paths.get(fileName);
-        try(BufferedWriter writer = Files.newBufferedWriter(path)){
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (AdUnitItTable unitItTable : unitItTables) {
                 writer.write(JSON.toJSONString(unitItTable));
                 writer.newLine();
             }
             writer.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             log.error("dumpAdUnitItTable error");
         }
     }
@@ -169,16 +168,16 @@ public class DumpDataService {
         }
         List<AdUnitKeywordTable> unitKeywordTables = new ArrayList<>();
         unitKeywords.forEach(k -> unitKeywordTables.add(
-                new AdUnitKeywordTable(k.getUnitId(),k.getKeyword())
+                new AdUnitKeywordTable(k.getUnitId(), k.getKeyword())
         ));
         Path path = Paths.get(fileName);
-        try(BufferedWriter writer = Files.newBufferedWriter(path)){
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (AdUnitKeywordTable unitKeywordTable : unitKeywordTables) {
                 writer.write(JSON.toJSONString(unitKeywordTable));
                 writer.newLine();
             }
             writer.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             log.error("dumpAdUnitKeywordTable error");
         }
     }
@@ -190,16 +189,16 @@ public class DumpDataService {
         }
         List<AdUnitDistrictTable> unitDistrictTables = new ArrayList<>();
         unitDistricts.forEach(d -> unitDistrictTables.add(
-                new AdUnitDistrictTable(d.getUnitId(),d.getProvince(),d.getCity())
+                new AdUnitDistrictTable(d.getUnitId(), d.getProvince(), d.getCity())
         ));
         Path path = Paths.get(fileName);
-        try(BufferedWriter writer = Files.newBufferedWriter(path)){
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (AdUnitDistrictTable unitDistrictTable : unitDistrictTables) {
                 writer.write(JSON.toJSONString(unitDistrictTable));
                 writer.newLine();
             }
             writer.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             log.error("dumpAdUnitDistrictTable error");
         }
     }
@@ -211,16 +210,16 @@ public class DumpDataService {
         }
         List<AdCreativeUnitTable> creativeUnitTables = new ArrayList<>();
         creativeUnits.forEach(c -> creativeUnitTables.add(
-                new AdCreativeUnitTable(c.getCreativeId(),c.getUnitId())
+                new AdCreativeUnitTable(c.getCreativeId(), c.getUnitId())
         ));
         Path path = Paths.get(fileName);
-        try(BufferedWriter writer = Files.newBufferedWriter(path)){
+        try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             for (AdCreativeUnitTable creativeUnitTable : creativeUnitTables) {
                 writer.write(JSON.toJSONString(creativeUnitTable));
                 writer.newLine();
             }
             writer.close();
-        }catch (IOException e) {
+        } catch (IOException e) {
             log.error("dumpAdCreativeUnitTable error");
         }
     }
