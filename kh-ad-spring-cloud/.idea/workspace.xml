@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/service/BinlogServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/JsonTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/TableTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/dto/Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/template.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +232,7 @@
       <workItem from="1609807665624" duration="23150000" />
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
-      <workItem from="1609981056797" duration="4923000" />
+      <workItem from="1609981056797" duration="5751000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -448,7 +451,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609985129206</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="使用开源工具监听Binlog">
+      <created>1609987213659</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1609987213659</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,7 +513,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="推广单元服务功能实现" />
     <MESSAGE value="推广单元限制服务功能实现" />
     <MESSAGE value="创意服务功能实现" />
     <MESSAGE value="创意与推广单元关联服务功能实现" />
@@ -528,7 +537,8 @@
     <MESSAGE value="第四层级索引操作的实现" />
     <MESSAGE value="全量索引加载的实现" />
     <MESSAGE value="格式化" />
-    <option name="LAST_COMMIT_MESSAGE" value="格式化" />
+    <MESSAGE value="使用开源工具监听Binlog" />
+    <option name="LAST_COMMIT_MESSAGE" value="使用开源工具监听Binlog" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -559,10 +569,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609985127258">
+    <state x="233" y="135" key="CommitChangelistDialog2" timestamp="1609987212824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609985127258" />
+    <state x="233" y="135" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1609987212824" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1609923965435">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -571,22 +581,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="497" y="291" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609745654049" />
-    <state width="1877" height="499" key="GridCell.Tab.0.bottom" timestamp="1609834830731">
+    <state width="1104" height="305" key="GridCell.Tab.0.bottom" timestamp="1609987216512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="499" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830731" />
-    <state width="1877" height="499" key="GridCell.Tab.0.center" timestamp="1609834830731">
+    <state width="1104" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609987216512" />
+    <state width="1104" height="305" key="GridCell.Tab.0.center" timestamp="1609987216512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="499" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830731" />
-    <state width="1877" height="499" key="GridCell.Tab.0.left" timestamp="1609834830731">
+    <state width="1104" height="305" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609987216512" />
+    <state width="1104" height="305" key="GridCell.Tab.0.left" timestamp="1609987216512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="499" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830731" />
-    <state width="1877" height="499" key="GridCell.Tab.0.right" timestamp="1609834830731">
+    <state width="1104" height="305" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609987216512" />
+    <state width="1104" height="305" key="GridCell.Tab.0.right" timestamp="1609987216512">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="499" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830731" />
+    <state width="1104" height="305" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609987216512" />
     <state width="730" height="285" key="GridCell.Tab.1.bottom" timestamp="1609834830729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
