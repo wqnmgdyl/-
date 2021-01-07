@@ -29,7 +29,7 @@ public class IUserServiceImpl implements IUserService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public CreateUserResponse createUser(CreateUserRequest request) throws AdException {
-        if (!request.volidate()) {
+        if (!request.validate()) {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
 
