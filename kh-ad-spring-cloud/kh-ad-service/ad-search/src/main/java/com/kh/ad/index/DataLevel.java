@@ -1,10 +1,13 @@
 package com.kh.ad.index;
 
+import lombok.Getter;
+
 /**
  * 索引层级
  *
  * @author han.ke
  */
+@Getter
 public enum DataLevel {
 
     LEVEL2("2", "level 2"),

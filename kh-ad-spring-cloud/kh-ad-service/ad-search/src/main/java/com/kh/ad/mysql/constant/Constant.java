@@ -9,7 +9,7 @@ import java.util.Map;
 public class Constant {
     private static final String DB_NAME = "ad_data";
 
-    private static class AD_PLAN_TABLE_INFO {
+    public static class AD_PLAN_TABLE_INFO {
         public static final String TABLE_NAME = "ad_plan";
         public static final String COLUMN_ID = "id";
         public static final String COLUMN_USER_ID = "user_id";
@@ -18,7 +18,7 @@ public class Constant {
         public static final String COLUMN_END_DATE = "end_date";
     }
 
-    public static class Ad_CREATIVE_TABLE_INFO {
+    public static class AD_CREATIVE_TABLE_INFO {
         public static final String TABLE_NAME = "ad_creative";
         public static final String COLUMN_ID = "id";
         public static final String COLUMN_TYPE = "type";
@@ -67,7 +67,7 @@ public class Constant {
     static {
         table2Db = new HashMap<>();
         table2Db.put(AD_PLAN_TABLE_INFO.TABLE_NAME, DB_NAME);
-        table2Db.put(Ad_CREATIVE_TABLE_INFO.TABLE_NAME, DB_NAME);
+        table2Db.put(AD_CREATIVE_TABLE_INFO.TABLE_NAME, DB_NAME);
         table2Db.put(AD_UNIT_TABLE_INFO.TABLE_NAME, DB_NAME);
         table2Db.put(AD_CREATIVE_UNIT_TABLE_INFO.TABLE_NAME, DB_NAME);
         table2Db.put(AD_UNIT_DISTRICT_TABLE_INFO.TABLE_NAME, DB_NAME);
