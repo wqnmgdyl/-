@@ -235,7 +235,7 @@
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
       <workItem from="1609981056797" duration="23006000" />
-      <workItem from="1610068056144" duration="4834000" />
+      <workItem from="1610068056144" duration="7796000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -538,7 +538,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610074637772</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="第三层级增量数据的投递">
+      <created>1610075499431</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1610075499431</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -593,7 +600,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="兴趣索引对象定义与服务实现" />
     <MESSAGE value="地域索引对象定义与服务实现" />
     <MESSAGE value="创意索引对象定义与服务实现" />
     <MESSAGE value="创意与推广单元关联索引对象定义与服务实现" />
@@ -618,7 +624,8 @@
     <MESSAGE value="日期格式转换工具类编写" />
     <MESSAGE value="索引层级枚举类" />
     <MESSAGE value="第二层级增量数据的投递" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二层级增量数据的投递" />
+    <MESSAGE value="第三层级增量数据的投递" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三层级增量数据的投递" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -649,10 +656,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610074636703">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610075498586">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610074636703" />
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610075498586" />
     <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610068294074">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
