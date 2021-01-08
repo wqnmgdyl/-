@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/sender/kafka/KafkaSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/sender/index/IndexSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/sender/index/IndexSender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,9 +76,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/sender/kafka/KafkaSender.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/CreativeType.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdPlanServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/controller/SearchController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/sender/index/IndexSender.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" root0="SKIP_INSPECTION" />
   </component>
@@ -235,7 +238,7 @@
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
       <workItem from="1609981056797" duration="23006000" />
-      <workItem from="1610068056144" duration="7796000" />
+      <workItem from="1610068056144" duration="9653000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -545,7 +548,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610075499431</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="第四层级增量数据的投递">
+      <created>1610081456234</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1610081456234</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -600,7 +610,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="地域索引对象定义与服务实现" />
     <MESSAGE value="创意索引对象定义与服务实现" />
     <MESSAGE value="创意与推广单元关联索引对象定义与服务实现" />
     <MESSAGE value="索引服务类缓存的实现" />
@@ -625,7 +634,8 @@
     <MESSAGE value="索引层级枚举类" />
     <MESSAGE value="第二层级增量数据的投递" />
     <MESSAGE value="第三层级增量数据的投递" />
-    <option name="LAST_COMMIT_MESSAGE" value="第三层级增量数据的投递" />
+    <MESSAGE value="第四层级增量数据的投递" />
+    <option name="LAST_COMMIT_MESSAGE" value="第四层级增量数据的投递" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -644,10 +654,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="170" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609734579515" />
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1610072848873">
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1610088939600">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610072848873" />
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610088939600" />
     <state x="100" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609830755399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -656,14 +666,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610075498586">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610081455363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610075498586" />
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610068294074">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610081455363" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610081533449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610068294074" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610081533449" />
     <state x="497" y="291" key="FileChooserDialogImpl" timestamp="1609745654049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
