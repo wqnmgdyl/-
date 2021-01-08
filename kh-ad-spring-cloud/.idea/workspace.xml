@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/sender/kafka/KafkaSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/ISearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/SearchRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/feature/DistrictFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/feature/FeatureRelation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/feature/ItFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/feature/KeywordFeature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/media/AdSlot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/media/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/media/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/media/Geo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +60,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -238,7 +246,7 @@
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
       <workItem from="1609981056797" duration="23006000" />
-      <workItem from="1610068056144" duration="9653000" />
+      <workItem from="1610068056144" duration="14915000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -555,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610081456234</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="将增量数据投递到Kafka">
+      <created>1610089690907</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1610089690907</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +625,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="创意索引对象定义与服务实现" />
     <MESSAGE value="创意与推广单元关联索引对象定义与服务实现" />
     <MESSAGE value="索引服务类缓存的实现" />
     <MESSAGE value="导出表数据字段定义" />
@@ -635,7 +649,8 @@
     <MESSAGE value="第二层级增量数据的投递" />
     <MESSAGE value="第三层级增量数据的投递" />
     <MESSAGE value="第四层级增量数据的投递" />
-    <option name="LAST_COMMIT_MESSAGE" value="第四层级增量数据的投递" />
+    <MESSAGE value="将增量数据投递到Kafka" />
+    <option name="LAST_COMMIT_MESSAGE" value="将增量数据投递到Kafka" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -666,14 +681,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610081455363">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610089690017">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610081455363" />
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610081533449">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610089690017" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610093189090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610081533449" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610093189090" />
     <state x="497" y="291" key="FileChooserDialogImpl" timestamp="1609745654049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -738,10 +753,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610008005284" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610009045790">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610089777016">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610009045790" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610089777016" />
     <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1610068069504">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
