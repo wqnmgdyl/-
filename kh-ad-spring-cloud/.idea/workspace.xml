@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/SearchResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adunit/AdUnitConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/impl/SearchImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adunit/AdUnitIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adunit/AdUnitIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adunit/AdUnitObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/adunit/AdUnitObject.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +240,9 @@
       <workItem from="1609836038626" duration="3554000" />
       <workItem from="1609894604287" duration="25998000" />
       <workItem from="1609981056797" duration="23006000" />
-      <workItem from="1610068056144" duration="16245000" />
+      <workItem from="1610068056144" duration="16543000" />
+      <workItem from="1610326711314" duration="1829000" />
+      <workItem from="1610328691115" duration="2869000" />
     </task>
     <task id="LOCAL-00001" summary="用户账户服务功能实现">
       <created>1609747665444</created>
@@ -568,7 +573,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610095691734</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="检索服务响应对象">
+      <created>1610099846525</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1610099846525</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -623,7 +635,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="索引服务类缓存的实现" />
     <MESSAGE value="导出表数据字段定义" />
     <MESSAGE value="表数据导出到文件功能实现" />
     <MESSAGE value="索引操作Handler的定义" />
@@ -648,7 +659,8 @@
     <MESSAGE value="第四层级增量数据的投递" />
     <MESSAGE value="将增量数据投递到Kafka" />
     <MESSAGE value="媒体方请求对象" />
-    <option name="LAST_COMMIT_MESSAGE" value="媒体方请求对象" />
+    <MESSAGE value="检索服务响应对象" />
+    <option name="LAST_COMMIT_MESSAGE" value="检索服务响应对象" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -667,10 +679,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="170" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609734579515" />
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1610088939600">
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1610330296989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610088939600" />
+    <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610330296989" />
     <state x="100" y="424" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609830755399">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -679,34 +691,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610095690671">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610331618421">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610095690671" />
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610093189090">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610331618421" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610327043974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610093189090" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610327043974" />
     <state x="497" y="291" key="FileChooserDialogImpl" timestamp="1609745654049">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="497" y="291" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1609745654049" />
-    <state width="1104" height="305" key="GridCell.Tab.0.bottom" timestamp="1610074649019">
+    <state width="1104" height="305" key="GridCell.Tab.0.bottom" timestamp="1610099904298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610074649019" />
-    <state width="1104" height="305" key="GridCell.Tab.0.center" timestamp="1610074649019">
+    <state width="1104" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
+    <state width="1104" height="305" key="GridCell.Tab.0.center" timestamp="1610099904298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610074649019" />
-    <state width="1104" height="305" key="GridCell.Tab.0.left" timestamp="1610074649018">
+    <state width="1104" height="305" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
+    <state width="1104" height="305" key="GridCell.Tab.0.left" timestamp="1610099904298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610074649018" />
-    <state width="1104" height="305" key="GridCell.Tab.0.right" timestamp="1610074649019">
+    <state width="1104" height="305" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
+    <state width="1104" height="305" key="GridCell.Tab.0.right" timestamp="1610099904298">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610074649019" />
+    <state width="1104" height="305" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
     <state width="730" height="285" key="GridCell.Tab.1.bottom" timestamp="1609834830729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -751,14 +763,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610008005284" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610089777016">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610099872907">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610089777016" />
-    <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1610068069504">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610099872907" />
+    <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1610328691450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="351" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610068069504" />
+    <state x="351" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610328691450" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609894916175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -783,10 +795,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610003576887" />
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1609998821531">
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1610329178567">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1609998821531" />
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610329178567" />
     <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1609745694064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
