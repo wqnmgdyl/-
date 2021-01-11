@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/CommonStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creative/CreativeIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creativeunit/CreativeUnitIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/index/creativeunit/CreativeUnitIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/impl/SearchImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/impl/SearchImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -241,14 +239,7 @@
       <workItem from="1609981056797" duration="23006000" />
       <workItem from="1610068056144" duration="16543000" />
       <workItem from="1610326711314" duration="1829000" />
-      <workItem from="1610328691115" duration="4716000" />
-    </task>
-    <task id="LOCAL-00002" summary="推广计划服务功能实现">
-      <created>1609750634993</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1609750634993</updated>
+      <workItem from="1610328691115" duration="5798000" />
     </task>
     <task id="LOCAL-00003" summary="推广计划服务功能实现">
       <created>1609750698195</created>
@@ -586,7 +577,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610332842434</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="通过推广单元获取关联的创意实现">
+      <created>1610333454151</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1610333454151</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -641,7 +639,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="索引操作Handler的定义" />
     <MESSAGE value="第二层级索引操作的实现" />
     <MESSAGE value="第三层级索引操作的实现" />
     <MESSAGE value="第四层级索引操作的实现" />
@@ -666,7 +663,8 @@
     <MESSAGE value="检索服务响应对象" />
     <MESSAGE value="根据流量类型实现对推广单元的预筛选" />
     <MESSAGE value="根据匹配信息实现对推广单元的再筛选" />
-    <option name="LAST_COMMIT_MESSAGE" value="根据匹配信息实现对推广单元的再筛选" />
+    <MESSAGE value="通过推广单元获取关联的创意实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="通过推广单元获取关联的创意实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -697,10 +695,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610332841319">
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610333453287">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610332841319" />
+    <state x="301" y="124" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610333453287" />
     <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610327043974">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
