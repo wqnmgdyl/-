@@ -19,7 +19,7 @@ public class DistrictFeature {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
-    private static class ProvinceAndCity {
+    public static class ProvinceAndCity {
         private String province;
         private String city;
     }
