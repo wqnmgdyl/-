@@ -2,24 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="Dashboard模块的实现">
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/kafkastudy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/src/main/java/com/kh/kafkastudy/CustomPartitioner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/src/main/java/com/kh/kafkastudy/MyConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../kafkastudy/src/main/java/com/kh/kafkastudy/MyProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/ad-dashboard.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/src/main/java/com/kh/ad/DashboardApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/Request_1.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/Request_2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/java/com/kh/ad/Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/java/com/kh/ad/search/SearchTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/AdPlanServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../mysql_data/ad_creative.data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/dump/DConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/dump/DConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/SearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/SearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/CreativeOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/CreativeOpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +56,9 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="kh-ad-spring-cloud" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -123,6 +120,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -132,7 +130,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -142,6 +140,10 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.kh.ad.client" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaProject\advertisement\kh-ad-spring-cloud\kh-ad-service\ad-search\src\main\resources" />
+      <recent name="D:\IdeaProject\advertisement\kh-ad-spring-cloud\kh-ad-service\ad-search\src\test\resources" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -150,16 +152,47 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BinlogServiceTest">
-    <configuration name="BinlogServiceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.kh.ad.service.BinlogServiceTest" />
-      <module name="ad-search" />
+  <component name="RunManager" selected="Spring Boot.SearchApplication">
+    <configuration name="AdPlanServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ad-sponsor" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.kh.ad.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.kh.ad.service" />
+      <option name="MAIN_CLASS_NAME" value="com.kh.ad.service.AdPlanServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest.testFetchAds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ad-search" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kh.ad.search.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.kh.ad.search" />
+      <option name="MAIN_CLASS_NAME" value="com.kh.ad.search.SearchTest" />
+      <option name="METHOD_NAME" value="testFetchAds" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DashboardApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ad-dashboard" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kh.ad.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.kh.ad.DashboardApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -206,9 +239,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BinlogServiceTest" />
+        <item itemvalue="Spring Boot.DashboardApplication" />
         <item itemvalue="Spring Boot.ZuulGateWayApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="JUnit.SearchTest.testFetchAds" />
+        <item itemvalue="JUnit.AdPlanServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +260,7 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -264,14 +299,8 @@
       <workItem from="1610326711314" duration="1829000" />
       <workItem from="1610328691115" duration="9755000" />
       <workItem from="1610339416428" duration="2007000" />
-      <workItem from="1610355323912" duration="1137000" />
-    </task>
-    <task id="LOCAL-00005" summary="推广单元限制服务功能实现">
-      <created>1609811973713</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1609811973713</updated>
+      <workItem from="1610355323912" duration="1916000" />
+      <workItem from="1610418380952" duration="9446000" />
     </task>
     <task id="LOCAL-00006" summary="创意服务功能实现">
       <created>1609815660847</created>
@@ -609,7 +638,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610335053378</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="Dashboard模块的实现">
+      <created>1610356474798</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1610356474798</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,6 +700,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="全量索引加载的实现" />
     <MESSAGE value="格式化" />
     <MESSAGE value="使用开源工具监听Binlog" />
@@ -708,6 +745,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="170" y="172" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609734579515" />
+    <state x="297" y="338" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610419283324">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="297" y="338" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610419283324" />
     <state x="381" y="205" key="#com.intellij.ide.util.MemberChooser" timestamp="1610330296989">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -720,10 +761,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="841" y="140" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610356350112">
+    <state x="841" y="140" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610432898226">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="841" y="140" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610356350112" />
+    <state x="841" y="140" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610432898226" />
     <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610356318937">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -732,54 +773,54 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1297" y="442" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610343461729" />
-    <state width="1104" height="305" key="GridCell.Tab.0.bottom" timestamp="1610099904298">
+    <state width="1293" height="228" key="GridCell.Tab.0.bottom" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
-    <state width="1104" height="305" key="GridCell.Tab.0.center" timestamp="1610099904298">
+    <state width="1293" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="1293" height="228" key="GridCell.Tab.0.center" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
-    <state width="1104" height="305" key="GridCell.Tab.0.left" timestamp="1610099904298">
+    <state width="1293" height="228" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="1293" height="228" key="GridCell.Tab.0.left" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
-    <state width="1104" height="305" key="GridCell.Tab.0.right" timestamp="1610099904298">
+    <state width="1293" height="228" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="1293" height="228" key="GridCell.Tab.0.right" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1104" height="305" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610099904298" />
-    <state width="730" height="285" key="GridCell.Tab.1.bottom" timestamp="1609834830729">
+    <state width="1293" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="1293" height="228" key="GridCell.Tab.1.bottom" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="730" height="285" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830729" />
-    <state width="730" height="285" key="GridCell.Tab.1.center" timestamp="1609834830729">
+    <state width="1293" height="228" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="1293" height="228" key="GridCell.Tab.1.center" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="730" height="285" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830729" />
-    <state width="730" height="285" key="GridCell.Tab.1.left" timestamp="1609834830729">
+    <state width="1293" height="228" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="1293" height="228" key="GridCell.Tab.1.left" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="730" height="285" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830729" />
-    <state width="730" height="285" key="GridCell.Tab.1.right" timestamp="1609834830729">
+    <state width="1293" height="228" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="1293" height="228" key="GridCell.Tab.1.right" timestamp="1610431767307">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="730" height="285" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830729" />
-    <state width="1293" height="408" key="GridCell.Tab.2.bottom" timestamp="1609834830727">
+    <state width="1293" height="228" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
+    <state width="750" height="228" key="GridCell.Tab.2.bottom" timestamp="1610431309859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="408" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830727" />
-    <state width="1293" height="408" key="GridCell.Tab.2.center" timestamp="1609834830727">
+    <state width="750" height="228" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
+    <state width="750" height="228" key="GridCell.Tab.2.center" timestamp="1610431309859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="408" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830727" />
-    <state width="1293" height="408" key="GridCell.Tab.2.left" timestamp="1609834830727">
+    <state width="750" height="228" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
+    <state width="750" height="228" key="GridCell.Tab.2.left" timestamp="1610431309859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="408" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830727" />
-    <state width="1293" height="408" key="GridCell.Tab.2.right" timestamp="1609834830727">
+    <state width="750" height="228" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
+    <state width="750" height="228" key="GridCell.Tab.2.right" timestamp="1610431309859">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="408" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1609834830727" />
+    <state width="750" height="228" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1609734488609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -792,10 +833,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610008005284" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610335065984">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610356493572">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610335065984" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610356493572" />
     <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1610328691450">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -824,10 +865,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610003576887" />
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1610329178567">
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1610420641262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610329178567" />
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610420641262" />
     <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1609745694064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

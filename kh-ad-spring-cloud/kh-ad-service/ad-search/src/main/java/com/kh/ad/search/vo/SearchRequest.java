@@ -23,7 +23,7 @@ import java.util.List;
 public class SearchRequest {
 
     /**
-     * 媒体放的请求标识
+     * 媒体方的请求标识
      */
     private String mediaId;
 

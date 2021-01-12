@@ -4,7 +4,7 @@ package com.kh.ad.dump;
  * @author han.ke
  */
 public class DConstant {
-    public static final String DATA_ROOT_DIR = "/Users/kh/mysql_data";
+    public static final String DATA_ROOT_DIR = "D:/IdeaProject/advertisement/mysql_data/";
 
     /**
      * 各个表数据的存储文件名
