@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -301,21 +301,7 @@
       <workItem from="1610355323912" duration="1916000" />
       <workItem from="1610418380952" duration="12342000" />
       <workItem from="1610445538363" duration="124000" />
-      <workItem from="1610500495885" duration="17814000" />
-    </task>
-    <task id="LOCAL-00008" summary="格式化">
-      <created>1609817458772</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1609817458772</updated>
-    </task>
-    <task id="LOCAL-00009" summary="完成服务Controller的编写">
-      <created>1609821921179</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1609821921179</updated>
+      <workItem from="1610500495885" duration="19533000" />
     </task>
     <task id="LOCAL-00010" summary="网关配置">
       <created>1609826432202</created>
@@ -646,7 +632,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610523766744</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="mybatis-plus代替JPA">
+      <created>1610524096708</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1610524096708</updated>
+    </task>
+    <task id="LOCAL-00058" summary="--">
+      <created>1610524213291</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1610524213291</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -702,7 +702,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="使用开源工具监听Binlog" />
     <MESSAGE value="构造解析Binlog使用到的模板文件" />
     <MESSAGE value="实现对模板对象的解析" />
     <MESSAGE value="去除无用代码" />
@@ -727,7 +726,8 @@
     <MESSAGE value="Dashboard模块的实现" />
     <MESSAGE value="功能测试" />
     <MESSAGE value="mybatis-plus代替JPA" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis-plus代替JPA" />
+    <MESSAGE value="--" />
+    <option name="LAST_COMMIT_MESSAGE" value="--" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -762,10 +762,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610524096136">
+    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610524212587">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610524096136" />
+    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610524212587" />
     <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610523459372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -838,10 +838,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="488" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1610442658763" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610523775536">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610524220575">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610523775536" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610524220575" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610520063256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

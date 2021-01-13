@@ -90,7 +90,6 @@ public class DumpDataService {
                 writer.write(JSON.toJSONString(planTable));
                 writer.newLine();
             }
-            writer.close();
         } catch (IOException e) {
             log.error("dumpAdPlanTable error");
         }
@@ -114,7 +113,6 @@ public class DumpDataService {
                 writer.write(JSON.toJSONString(unitTable));
                 writer.newLine();
             }
-            writer.close();
         } catch (IOException e) {
             log.error("dumpAdUnitTable error");
         }
@@ -136,7 +134,6 @@ public class DumpDataService {
                 writer.write(JSON.toJSONString(creativeTable));
                 writer.newLine();
             }
-            writer.close();
         } catch (IOException e) {
             log.error("dumpAdCreativeTable error");
         }
@@ -157,7 +154,6 @@ public class DumpDataService {
                 writer.write(JSON.toJSONString(unitItTable));
                 writer.newLine();
             }
-            writer.close();
         } catch (IOException e) {
             log.error("dumpAdUnitItTable error");
         }
@@ -178,7 +174,6 @@ public class DumpDataService {
                 writer.write(JSON.toJSONString(unitKeywordTable));
                 writer.newLine();
             }
-            writer.close();
         } catch (IOException e) {
             log.error("dumpAdUnitKeywordTable error");
         }
@@ -199,7 +194,6 @@ public class DumpDataService {
                 writer.write(JSON.toJSONString(unitDistrictTable));
                 writer.newLine();
             }
-            writer.close();
         } catch (IOException e) {
             log.error("dumpAdUnitDistrictTable error");
         }
@@ -220,7 +214,6 @@ public class DumpDataService {
                 writer.write(JSON.toJSONString(creativeUnitTable));
                 writer.newLine();
             }
-            writer.close();
         } catch (IOException e) {
             log.error("dumpAdCreativeUnitTable error");
         }
