@@ -1,43 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="功能测试">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ad-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ad-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/TemplateHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/TemplateHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/resources/application.yml" afterDir="false" />
+    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/SponsorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/SponsorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdPlanOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdPlanOpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdUnitOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdUnitOpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/CreativeOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/CreativeOpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/UserOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/UserOpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdPlanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdPlanDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUnitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUnitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/CreativeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/CreativeDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitDistrictDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitDistrictDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitItDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitItDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitKeywordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitKeywordDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/CreativeUnitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/CreativeUnitDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdPlan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/Creative.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/Creative.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitDistrict.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitDistrict.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitIt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitKeyword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/CreativeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/CreativeUnit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdPlanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdPlanServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/utils/CommonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -336,14 +301,7 @@
       <workItem from="1610355323912" duration="1916000" />
       <workItem from="1610418380952" duration="12342000" />
       <workItem from="1610445538363" duration="124000" />
-      <workItem from="1610500495885" duration="17448000" />
-    </task>
-    <task id="LOCAL-00007" summary="创意与推广单元关联服务功能实现">
-      <created>1609817024046</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1609817024046</updated>
+      <workItem from="1610500495885" duration="17814000" />
     </task>
     <task id="LOCAL-00008" summary="格式化">
       <created>1609817458772</created>
@@ -681,7 +639,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610432954037</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="mybatis-plus代替JPA">
+      <created>1610523766744</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1610523766744</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -737,7 +702,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="格式化" />
     <MESSAGE value="使用开源工具监听Binlog" />
     <MESSAGE value="构造解析Binlog使用到的模板文件" />
     <MESSAGE value="实现对模板对象的解析" />
@@ -762,7 +726,8 @@
     <MESSAGE value="完善广告检索服务" />
     <MESSAGE value="Dashboard模块的实现" />
     <MESSAGE value="功能测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="功能测试" />
+    <MESSAGE value="mybatis-plus代替JPA" />
+    <option name="LAST_COMMIT_MESSAGE" value="mybatis-plus代替JPA" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -797,10 +762,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610523495468">
+    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610523764597">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610523495468" />
+    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610523764597" />
     <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610523459372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -873,10 +838,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="488" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1610442658763" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610432974988">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610523775536">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610432974988" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610523775536" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610520063256">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
