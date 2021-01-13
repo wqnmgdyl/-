@@ -11,5 +11,6 @@ public class Constants {
         public static final String SAME_NAME_PLAN_ERROR = "存在同名的推广计划";
         public static final String SAME_NAME_UNIT_ERROR = "存在同名的推广单元";
         public static final String SAME_NAME_CREATIVE_ERROR = "存在同名的创意";
+        public static final String INSERT_ERROR = "插入数据失败";
     }
 }

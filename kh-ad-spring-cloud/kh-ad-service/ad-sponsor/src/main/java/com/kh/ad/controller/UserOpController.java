@@ -3,6 +3,7 @@ package com.kh.ad.controller;
 import com.alibaba.fastjson.JSON;
 import com.kh.ad.exception.AdException;
 import com.kh.ad.service.IUserService;
+import com.kh.ad.vo.CommonResponse;
 import com.kh.ad.vo.CreateUserRequest;
 import com.kh.ad.vo.CreateUserResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -23,10 +24,10 @@ public class UserOpController {
     }
 
     @PostMapping("/create/user")
-    public CreateUserResponse createUser(
+    public CommonResponse<CreateUserResponse> createUser(
             @RequestBody CreateUserRequest request) throws AdException {
         log.info("ad-sponsor: createUser -> {]",
                 JSON.toJSONString(request));
-        return userService.createUser(request);
+        return new CommonResponse<>(0, "create user success", userService.createUser(request));
     }
 }

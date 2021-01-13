@@ -1,10 +1,9 @@
 package com.kh.ad.entity.unit_condition;
 
+import com.baomidou.mybatisplus.annotation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
 
 /**
  * @author han.ke
@@ -12,21 +11,14 @@ import javax.persistence.*;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "ad_unit_keyword")
+@TableName(value = "ad_unit_keyword")
 public class AdUnitKeyword {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @TableId(type = IdType.AUTO)
     private Long id;
 
-    @Basic
-    @Column(name = "unit_id", nullable = false)
     private Long unitId;
 
-    @Basic
-    @Column(name = "keyword", nullable = false)
     private String keyword;
 
     public AdUnitKeyword(Long unitId, String keyword) {

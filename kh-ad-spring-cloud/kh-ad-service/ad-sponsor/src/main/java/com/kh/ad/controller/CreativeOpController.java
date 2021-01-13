@@ -3,6 +3,7 @@ package com.kh.ad.controller;
 import com.alibaba.fastjson.JSON;
 import com.kh.ad.exception.AdException;
 import com.kh.ad.service.ICreativeService;
+import com.kh.ad.vo.CommonResponse;
 import com.kh.ad.vo.CreativeRequest;
 import com.kh.ad.vo.CreativeResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -23,10 +24,10 @@ public class CreativeOpController {
     }
 
     @PostMapping("/create/creative")
-    public CreativeResponse createCreative(
+    public CommonResponse<CreativeResponse> createCreative(
             @RequestBody CreativeRequest request) throws AdException {
         log.info("ad-sponsor: createCreative -> {}",
                 JSON.toJSONString(request));
-        return creativeService.createCreative(request);
+        return new CommonResponse<>(0, "create Creative success", creativeService.createCreative(request));
     }
 }

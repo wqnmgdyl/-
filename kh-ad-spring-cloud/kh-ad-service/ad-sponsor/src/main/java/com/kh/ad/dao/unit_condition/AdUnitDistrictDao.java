@@ -1,10 +1,12 @@
 package com.kh.ad.dao.unit_condition;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.kh.ad.entity.unit_condition.AdUnitDistrict;
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
 /**
  * @author han.ke
  */
-public interface AdUnitDistrictDao extends JpaRepository<AdUnitDistrict, Long> {
+@Repository
+public interface AdUnitDistrictDao extends BaseMapper<AdUnitDistrict> {
 }

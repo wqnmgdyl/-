@@ -1,11 +1,13 @@
 package com.kh.ad.entity;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 import com.kh.ad.constant.CommonStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
 import java.util.Date;
 
 /**
@@ -14,32 +16,19 @@ import java.util.Date;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "ad_user")
+@TableName(value = "ad_user")
 public class AdUser {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+    @TableId(type = IdType.AUTO)
     private Long id;
 
-    @Basic
-    @Column(name = "username", nullable = false)
     private String username;
 
-    @Basic
-    @Column(name = "token", nullable = false)
     private String token;
 
-    @Basic
-    @Column(name = "user_status", nullable = false)
     private Integer userStatus;
 
-    @Basic
-    @Column(name = "create_time", nullable = false)
     private Date createTime;
 
-    @Basic
-    @Column(name = "update_time", nullable = false)
     private Date updateTime;
 
     public AdUser(String username, String token) {

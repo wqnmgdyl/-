@@ -1,5 +1,6 @@
 package com.kh.ad.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.kh.ad.constant.Constants;
 import com.kh.ad.dao.AdUserDao;
 import com.kh.ad.dao.CreativeDao;
@@ -33,18 +34,26 @@ public class CreativeServiceImpl implements ICreativeService {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
 
-        Optional<AdUser> user = userDao.findById(request.getUserId());
-        if (!user.isPresent()) {
+        AdUser user = userDao.selectById(request.getUserId());
+        if (user == null) {
             throw new AdException(Constants.ErrorMsg.CAN_NOT_FIND_RECORD);
         }
 
-        Creative oldCreative = creativeDao.findByNameAndUserId(request.getName(), request.getUserId());
+        QueryWrapper<Creative> wrapper = new QueryWrapper<>();
+        wrapper.eq("name", request.getName()).
+                eq("user_id", request.getUserId());
+        Creative oldCreative = creativeDao.selectOne(wrapper);
         if (oldCreative != null) {
             throw new AdException(Constants.ErrorMsg.SAME_NAME_CREATIVE_ERROR);
         }
 
-        Creative newCreative = creativeDao.save(request.convertToEntity());
+        int insert = creativeDao.insert(request.convertToEntity());
 
+        if (insert <= 0) {
+            throw new AdException(Constants.ErrorMsg.INSERT_ERROR);
+        }
+
+        Creative newCreative = creativeDao.selectOne(wrapper);
         return new CreativeResponse(newCreative.getId(), newCreative.getName());
     }
 }

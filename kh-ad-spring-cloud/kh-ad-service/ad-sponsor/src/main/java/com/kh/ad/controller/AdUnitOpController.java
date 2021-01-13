@@ -22,42 +22,42 @@ public class AdUnitOpController {
     }
 
     @PostMapping("/create/adUnit")
-    public AdUnitResponse createUnit(
+    public CommonResponse<AdUnitResponse> createUnit(
             @RequestBody AdUnitRequest request) throws AdException {
         log.info("ad-sponsor: createUnit -> {}",
                 JSON.toJSONString(request));
-        return adUnitService.createUnit(request);
+        return new CommonResponse<>(0, "create Unit success", adUnitService.createUnit(request));
     }
 
     @PostMapping("/create/unitKeyword")
-    public AdUnitKeywordResponse createUnitKeyword(
+    public CommonResponse<AdUnitKeywordResponse> createUnitKeyword(
             @RequestBody AdUnitKeywordRequest request) throws AdException {
         log.info("ad-sponsor: createUnitKeyword -> {}",
                 JSON.toJSONString(request));
-        return adUnitService.createUnitKeyword(request);
+        return new CommonResponse<>(0, "create UnitKeyword success", adUnitService.createUnitKeyword(request));
     }
 
     @PostMapping("/create/unitIt")
-    public AdUnitItResponse createUnitIt(
+    public CommonResponse<AdUnitItResponse> createUnitIt(
             @RequestBody AdUnitItRequest request) throws AdException {
         log.info("ad-sponsor: createUnitIt -> {}",
                 JSON.toJSONString(request));
-        return adUnitService.createUnitIt(request);
+        return new CommonResponse<>(0, "create UnitIt success", adUnitService.createUnitIt(request));
     }
 
     @PostMapping("/create/unitDistrict")
-    public AdUnitDistrictResponse createUnitDistrict(
+    public CommonResponse<AdUnitDistrictResponse> createUnitDistrict(
             @RequestBody AdUnitDistrictRequest request) throws AdException {
         log.info("ad-sponsor: createUnitDistrict -> {}",
                 JSON.toJSONString(request));
-        return adUnitService.createUnitDistrict(request);
+        return new CommonResponse<>(0, "create UnitDistrict success", adUnitService.createUnitDistrict(request));
     }
 
     @PostMapping("/create/creativeUnit")
-    public CreativeUnitResponse createCreativeUnit(
+    public CommonResponse<CreativeUnitResponse> createCreativeUnit(
             @RequestBody CreativeUnitRequest request) throws AdException {
         log.info("ad-sponsor: createCreativeUnit -> {}",
                 JSON.toJSONString(request));
-        return adUnitService.createCreativeUnit(request);
+        return new CommonResponse<>(0, "create CreativeUnit success", adUnitService.createCreativeUnit(request));
     }
 }

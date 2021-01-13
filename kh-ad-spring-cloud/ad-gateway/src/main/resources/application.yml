@@ -21,3 +21,6 @@ zuul:
       serviceId: eureka-client-ad-search
       strip-prefix: false
       #127.0.0.1:9000/api/ad-search/fetchAds
+  host:
+    connect-timeout-millis: 30000
+    socket-timeout-millis: 30000

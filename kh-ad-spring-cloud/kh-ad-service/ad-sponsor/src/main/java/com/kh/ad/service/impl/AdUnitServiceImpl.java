@@ -1,5 +1,6 @@
 package com.kh.ad.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.kh.ad.constant.Constants;
 import com.kh.ad.dao.AdPlanDao;
 import com.kh.ad.dao.AdUnitDao;
@@ -10,6 +11,7 @@ import com.kh.ad.dao.unit_condition.AdUnitKeywordDao;
 import com.kh.ad.dao.unit_condition.CreativeUnitDao;
 import com.kh.ad.entity.AdPlan;
 import com.kh.ad.entity.AdUnit;
+import com.kh.ad.entity.Creative;
 import com.kh.ad.entity.unit_condition.AdUnitDistrict;
 import com.kh.ad.entity.unit_condition.AdUnitIt;
 import com.kh.ad.entity.unit_condition.AdUnitKeyword;
@@ -58,19 +60,27 @@ public class AdUnitServiceImpl implements IAdUnitService {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
 
-        Optional<AdPlan> adPlan = planDao.findById(request.getPlanId());
+        AdPlan adPlan = planDao.selectById(request.getPlanId());
 
-        if (adPlan.isPresent()) {
+        if (adPlan == null) {
             throw new AdException(Constants.ErrorMsg.CAN_NOT_FIND_RECORD);
         }
 
-        AdUnit oldAdUnit = unitDao.findByPlanIdAndUnitName(request.getPlanId(),
-                request.getUnitName());
+        QueryWrapper<AdUnit> wrapper = new QueryWrapper<>();
+        wrapper.eq("plan_id", request.getPlanId()).
+                eq("unit_name", request.getUnitName());
+        AdUnit oldAdUnit = unitDao.selectOne(wrapper);
         if (oldAdUnit != null) {
             throw new AdException(Constants.ErrorMsg.SAME_NAME_UNIT_ERROR);
         }
-        AdUnit newAdUnit = unitDao.save(new AdUnit(request.getPlanId(), request.getUnitName(),
+        int insert = unitDao.insert(new AdUnit(request.getPlanId(), request.getUnitName(),
                 request.getPositionType(), request.getBudget()));
+
+        if (insert <= 0) {
+            throw new AdException(Constants.ErrorMsg.INSERT_ERROR);
+        }
+
+        AdUnit newAdUnit = unitDao.selectOne(wrapper);
         return new AdUnitResponse(newAdUnit.getId(), newAdUnit.getUnitName());
     }
 
@@ -88,9 +98,21 @@ public class AdUnitServiceImpl implements IAdUnitService {
             request.getUnitKeywords().forEach(i -> unitKeywords.add(
                     new AdUnitKeyword(i.getUnitId(), i.getKeyword())
             ));
-            ids = unitKeywordDao.saveAll(unitKeywords).stream().
-                    map(AdUnitKeyword::getId).
-                    collect(Collectors.toList());
+            List<Long> uIds = new ArrayList<>();
+            List<String> keyword = new ArrayList<>();
+            for (AdUnitKeyword unitKeyword : unitKeywords) {
+                uIds.add(unitKeyword.getUnitId());
+                keyword.add(unitKeyword.getKeyword());
+                int insert = unitKeywordDao.insert(unitKeyword);
+                if (insert <= 0) {
+                    throw new AdException(Constants.ErrorMsg.INSERT_ERROR);
+                }
+            }
+            QueryWrapper<AdUnitKeyword> wrapper = new QueryWrapper<>();
+            wrapper.in("unit_id", uIds).
+                    in("keyword", keyword);
+            ids = unitKeywordDao.selectList(wrapper).stream().
+                    map(AdUnitKeyword::getId).collect(Collectors.toList());
         }
         return new AdUnitKeywordResponse(ids);
     }
@@ -107,7 +129,20 @@ public class AdUnitServiceImpl implements IAdUnitService {
         request.getUnitIts().forEach(i -> unitIts.add(
                 new AdUnitIt(i.getUnitId(), i.getItTag())
         ));
-        List<Long> ids = unitItDao.saveAll(unitIts).stream().
+        List<Long> uIds = new ArrayList<>();
+        List<String> tags = new ArrayList<>();
+        for (AdUnitIt unitIt : unitIts) {
+            uIds.add(unitIt.getUnitId());
+            tags.add(unitIt.getItTag());
+            int insert = unitItDao.insert(unitIt);
+            if (insert <= 0) {
+                throw new AdException(Constants.ErrorMsg.INSERT_ERROR);
+            }
+        }
+        QueryWrapper<AdUnitIt> wrapper = new QueryWrapper<>();
+        wrapper.in("unit_id", uIds).
+                in("it_tag", tags);
+        List<Long> ids = unitItDao.selectList(wrapper).stream().
                 map(AdUnitIt::getId).
                 collect(Collectors.toList());
         ;
@@ -126,7 +161,23 @@ public class AdUnitServiceImpl implements IAdUnitService {
         request.getUnitDistricts().forEach(i -> unitDistricts.add(
                 new AdUnitDistrict(i.getUnitId(), i.getProvince(), i.getCity())
         ));
-        List<Long> ids = unitDistrictDao.saveAll(unitDistricts).stream().
+        List<Long> uIds = new ArrayList<>();
+        List<String> province = new ArrayList<>();
+        List<String> city = new ArrayList<>();
+        for (AdUnitDistrict unitDistrict : unitDistricts) {
+            uIds.add(unitDistrict.getUnitId());
+            province.add(unitDistrict.getProvince());
+            city.add(unitDistrict.getCity());
+            int insert = unitDistrictDao.insert(unitDistrict);
+            if (insert <= 0) {
+                throw new AdException(Constants.ErrorMsg.INSERT_ERROR);
+            }
+        }
+        QueryWrapper<AdUnitDistrict> wrapper = new QueryWrapper<>();
+        wrapper.in("unit_id", uIds).
+                in("province", province).
+                in("city", city);
+        List<Long> ids = unitDistrictDao.selectList(wrapper).stream().
                 map(AdUnitDistrict::getId).collect(Collectors.toList());
         return new AdUnitDistrictResponse(ids);
     }
@@ -149,7 +200,20 @@ public class AdUnitServiceImpl implements IAdUnitService {
         request.getUnitItems().forEach(i -> creativeUnits.add(
                 new CreativeUnit(i.getCreativeId(), i.getUnitId())
         ));
-        List<Long> ids = creativeUnitDao.saveAll(creativeUnits).stream().
+        List<Long> uIds = new ArrayList<>();
+        List<Long> cIds = new ArrayList<>();
+        for (CreativeUnit creativeUnit : creativeUnits) {
+            uIds.add(creativeUnit.getUnitId());
+            cIds.add(creativeUnit.getCreativeId());
+            int insert = creativeUnitDao.insert(creativeUnit);
+            if (insert <= 0) {
+                throw new AdException(Constants.ErrorMsg.INSERT_ERROR);
+            }
+        }
+        QueryWrapper<CreativeUnit> wrapper = new QueryWrapper<>();
+        wrapper.in("unit_id", uIds).
+                in("creative_id", cIds);
+        List<Long> ids = creativeUnitDao.selectList(wrapper).stream().
                 map(CreativeUnit::getId).
                 collect(Collectors.toList());
         return new CreativeUnitResponse(ids);
@@ -159,7 +223,7 @@ public class AdUnitServiceImpl implements IAdUnitService {
         if (CollectionUtils.isEmpty(unitIds)) {
             return false;
         }
-        return unitDao.findAllById(unitIds).size() ==
+        return unitDao.selectBatchIds(unitIds).size() ==
                 new HashSet<>(unitIds).size();
     }
 
@@ -167,8 +231,7 @@ public class AdUnitServiceImpl implements IAdUnitService {
         if (CollectionUtils.isEmpty(creativeIds)) {
             return false;
         }
-
-        return creativeDao.findAllById(creativeIds).size() ==
+        return creativeDao.selectBatchIds(creativeIds).size() ==
                 new HashSet<>(creativeIds).size();
     }
 }

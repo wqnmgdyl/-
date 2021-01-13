@@ -33,7 +33,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author han.ke
@@ -71,9 +73,9 @@ public class DumpDataService {
     }
 
     private void dumpAdPlanTable(String fileName) {
-        List<AdPlan> adPlans = planDao.findAllByPlanStatus(
-                CommonStatus.VALTD.getStatus()
-        );
+        Map<String, Object> map = new HashMap<>();
+        map.put("plan_status", CommonStatus.VALTD.getStatus());
+        List<AdPlan> adPlans = planDao.selectByMap(map);
         if (CollectionUtils.isEmpty(adPlans)) {
             return;
         }
@@ -95,9 +97,9 @@ public class DumpDataService {
     }
 
     private void dumpAdUnitTable(String fileName) {
-        List<AdUnit> adUnits = unitDao.findAllByUnitStatus(
-                CommonStatus.VALTD.getStatus()
-        );
+        Map<String, Object> map = new HashMap<>();
+        map.put("unit_status", CommonStatus.VALTD.getStatus());
+        List<AdUnit> adUnits = unitDao.selectByMap(map);
         if (CollectionUtils.isEmpty(adUnits)) {
             return;
         }
@@ -119,7 +121,7 @@ public class DumpDataService {
     }
 
     private void dumpAdCreativeTable(String fileName) {
-        List<Creative> creatives = creativeDao.findAll();
+        List<Creative> creatives = creativeDao.selectList(null);
         if (CollectionUtils.isEmpty(creatives)) {
             return;
         }
@@ -141,7 +143,7 @@ public class DumpDataService {
     }
 
     private void dumpAdUnitItTable(String fileName) {
-        List<AdUnitIt> unitIts = itDao.findAll();
+        List<AdUnitIt> unitIts = itDao.selectList(null);
         if (CollectionUtils.isEmpty(unitIts)) {
             return;
         }
@@ -162,7 +164,7 @@ public class DumpDataService {
     }
 
     private void dumpAdUnitKeywordTable(String fileName) {
-        List<AdUnitKeyword> unitKeywords = keywordDao.findAll();
+        List<AdUnitKeyword> unitKeywords = keywordDao.selectList(null);
         if (CollectionUtils.isEmpty(unitKeywords)) {
             return;
         }
@@ -183,7 +185,7 @@ public class DumpDataService {
     }
 
     private void dumpAdUnitDistrictTable(String fileName) {
-        List<AdUnitDistrict> unitDistricts = districtDao.findAll();
+        List<AdUnitDistrict> unitDistricts = districtDao.selectList(null);
         if (CollectionUtils.isEmpty(unitDistricts)) {
             return;
         }
@@ -204,7 +206,7 @@ public class DumpDataService {
     }
 
     private void dumpAdCreativeUnitTable(String fileName) {
-        List<CreativeUnit> creativeUnits = creativeUnitDao.findAll();
+        List<CreativeUnit> creativeUnits = creativeUnitDao.selectList(null);
         if (CollectionUtils.isEmpty(creativeUnits)) {
             return;
         }

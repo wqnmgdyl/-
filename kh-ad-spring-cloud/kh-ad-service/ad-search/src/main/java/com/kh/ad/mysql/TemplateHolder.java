@@ -6,7 +6,6 @@ import com.kh.ad.mysql.dto.ParseTemplate;
 import com.kh.ad.mysql.dto.TableTemplate;
 import com.kh.ad.mysql.dto.Template;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Component;
 
@@ -73,12 +72,12 @@ public class TemplateHolder {
             );
 
             jdbcTemplate.query(SQL_SCHEMA, new Object[]{
-                    template.getDatabase(), table.getTableName()},
+                            template.getDatabase(), table.getTableName()},
                     (rs, i) -> {
                         int pos = rs.getInt("ORDINAL_POSITION");
                         String colName = rs.getString("COLUMN_NAME");
 
-                        if((null != updateFields && updateFields.contains(colName))
+                        if ((null != updateFields && updateFields.contains(colName))
                                 || (null != insertFields && insertFields.contains(colName))
                                 || (null != deleteFields && deleteFields.contains(colName))) {
                             table.getPosMap().put(pos - 1, colName);

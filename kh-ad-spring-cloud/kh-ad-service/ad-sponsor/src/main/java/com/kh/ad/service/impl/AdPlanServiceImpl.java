@@ -1,5 +1,6 @@
 package com.kh.ad.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.kh.ad.constant.CommonStatus;
 import com.kh.ad.constant.Constants;
 import com.kh.ad.dao.AdPlanDao;
@@ -12,6 +13,7 @@ import com.kh.ad.utils.CommonUtils;
 import com.kh.ad.vo.AdPlanGetRequest;
 import com.kh.ad.vo.AdPlanRequest;
 import com.kh.ad.vo.AdPlanResponse;
+import org.apache.tomcat.util.bcel.Const;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -42,19 +44,28 @@ public class AdPlanServiceImpl implements IAdPlanService {
         }
 
         //确保关联的User是存在的
-        Optional<AdUser> adUser = userDao.findById(request.getUserId());
-        if (!adUser.isPresent()) {
+        AdUser adUser = userDao.selectById(request.getUserId());
+        if (adUser == null) {
             throw new AdException(Constants.ErrorMsg.CAN_NOT_FIND_RECORD);
         }
 
-        AdPlan oldPlan = adPlanDao.findByUserIdAndPlanName(request.getUserId(), request.getPlanName());
+        QueryWrapper<AdPlan> wrapper = new QueryWrapper<>();
+        wrapper.eq("user_id", request.getUserId()).
+                eq("plan_name", request.getPlanName());
+        AdPlan oldPlan = adPlanDao.selectOne(wrapper);
         if (oldPlan != null) {
             throw new AdException(Constants.ErrorMsg.SAME_NAME_PLAN_ERROR);
         }
 
-        AdPlan newAdPlan = adPlanDao.save(new AdPlan(request.getUserId(), request.getPlanName(),
+        int insert = adPlanDao.insert(new AdPlan(request.getUserId(), request.getPlanName(),
                 CommonUtils.parseStringDate(request.getStartDate()),
                 CommonUtils.parseStringDate(request.getEndDate())));
+
+        if (insert <= 0) {
+            throw new AdException(Constants.ErrorMsg.INSERT_ERROR);
+        }
+
+        AdPlan newAdPlan = adPlanDao.selectOne(wrapper);
 
         return new AdPlanResponse(newAdPlan.getId(), newAdPlan.getPlanName());
     }
@@ -64,7 +75,11 @@ public class AdPlanServiceImpl implements IAdPlanService {
         if (!request.validate()) {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
-        return adPlanDao.findAllByIdInAndUserId(request.getIds(), request.getUserId());
+        QueryWrapper<AdPlan> wrapper = new QueryWrapper<>();
+        wrapper.in("id", request.getIds()).
+                eq("user_id", request.getUserId());
+        List<AdPlan> adPlans = adPlanDao.selectList(wrapper);
+        return adPlans;
     }
 
     @Override
@@ -74,7 +89,10 @@ public class AdPlanServiceImpl implements IAdPlanService {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
 
-        AdPlan plan = adPlanDao.findByIdAndUserId(request.getId(), request.getUserId());
+        QueryWrapper<AdPlan> wrapper = new QueryWrapper<>();
+        wrapper.eq("id", request.getId()).
+                eq("user_id", request.getUserId());
+        AdPlan plan = adPlanDao.selectOne(wrapper);
 
         if (plan == null) {
             throw new AdException(Constants.ErrorMsg.CAN_NOT_FIND_RECORD);
@@ -93,7 +111,7 @@ public class AdPlanServiceImpl implements IAdPlanService {
         }
 
         plan.setUpdateTime(new Date());
-        plan = adPlanDao.save(plan);
+        int update = adPlanDao.updateById(plan);
         return new AdPlanResponse(plan.getId(), plan.getPlanName());
     }
 
@@ -104,12 +122,15 @@ public class AdPlanServiceImpl implements IAdPlanService {
             throw new AdException(Constants.ErrorMsg.REQUEST_PARAM_ERROR);
         }
 
-        AdPlan plan = adPlanDao.findByIdAndUserId(request.getId(), request.getUserId());
+        QueryWrapper<AdPlan> wrapper = new QueryWrapper<>();
+        wrapper.eq("id", request.getId()).
+                eq("user_id", request.getUserId());
+        AdPlan plan = adPlanDao.selectOne(wrapper);
         if (plan == null) {
             throw new AdException(Constants.ErrorMsg.CAN_NOT_FIND_RECORD);
         }
         plan.setPlanStatus(CommonStatus.INVALTD.getStatus());
         plan.setUpdateTime(new Date());
-        adPlanDao.save(plan);
+        adPlanDao.updateById(plan);
     }
 }

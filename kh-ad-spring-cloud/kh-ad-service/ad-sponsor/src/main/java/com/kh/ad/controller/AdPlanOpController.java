@@ -7,6 +7,7 @@ import com.kh.ad.service.IAdPlanService;
 import com.kh.ad.vo.AdPlanGetRequest;
 import com.kh.ad.vo.AdPlanRequest;
 import com.kh.ad.vo.AdPlanResponse;
+import com.kh.ad.vo.CommonResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -25,34 +26,37 @@ public class AdPlanOpController {
     }
 
     @PostMapping("/create/adPlan")
-    public AdPlanResponse createAdPlan(
+    public CommonResponse<AdPlanResponse> createAdPlan(
             @RequestBody AdPlanRequest request) throws AdException {
         log.info("ad-sponsor: createAdPlan -> {}",
                 JSON.toJSONString(request));
-        return adPlanService.createAdPlan(request);
+        AdPlanResponse adPlan = adPlanService.createAdPlan(request);
+        return new CommonResponse<>(0, "create AdPlan success", adPlan);
     }
 
     @PostMapping("/get/adPlan")
-    public List<AdPlan> getAdPlanByIds(
+    public CommonResponse<List<AdPlan>> getAdPlanByIds(
             @RequestBody AdPlanGetRequest request) throws AdException {
         log.info("ad-sponsor: getAdPlanByIds -> {}",
                 JSON.toJSONString(request));
-        return adPlanService.getAdPlanByIds(request);
+        List<AdPlan> adPlans = adPlanService.getAdPlanByIds(request);
+        return new CommonResponse<>(0, "success", adPlans);
     }
 
     @PutMapping("/update/adPlan")
-    public AdPlanResponse updateAdPlan(
+    public CommonResponse<AdPlanResponse> updateAdPlan(
             @RequestBody AdPlanRequest request) throws AdException {
         log.info("ad-sponsor: updateAdPlan -> {}",
                 JSON.toJSONString(request));
-        return adPlanService.updateAdPlan(request);
+        return new CommonResponse<>(0, "update AdPlan success", adPlanService.updateAdPlan(request));
     }
 
     @DeleteMapping("delete/adPlan")
-    public void deleteAdPlan(
+    public CommonResponse<AdPlanResponse> deleteAdPlan(
             @RequestBody AdPlanRequest request) throws AdException {
         log.info("ad-sponsor: deleteAdPlan -> {}",
                 JSON.toJSONString(request));
         adPlanService.deleteAdPlan(request);
+        return new CommonResponse<>(0, "delete AdPlan success", null);
     }
 }

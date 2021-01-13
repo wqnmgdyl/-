@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="Dashboard模块的实现">
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/Request_1.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/resources/Request_2.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/java/com/kh/ad/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/java/com/kh/ad/search/SearchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/AdPlanServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../mysql_data/ad_creative.data" afterDir="false" />
+    <list default="true" id="d6e54766-ed39-4cbe-bf24-3d3a3cbb92fe" name="Default Changelist" comment="功能测试">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/dump/DConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-common/src/main/java/com/kh/ad/dump/DConstant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/SearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/search/vo/SearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ad-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ad-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-dashboard/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/TemplateHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/main/java/com/kh/ad/mysql/TemplateHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-search/src/test/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/SponsorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/SponsorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/constant/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdPlanOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdPlanOpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdUnitOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/AdUnitOpController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/CreativeOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/CreativeOpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/UserOpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/controller/UserOpController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdPlanDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdPlanDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUnitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUnitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/AdUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/CreativeDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/CreativeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitDistrictDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitDistrictDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitItDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitItDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitKeywordDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/AdUnitKeywordDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/CreativeUnitDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/dao/unit_condition/CreativeUnitDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdPlan.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdPlan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/AdUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/Creative.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/Creative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitDistrict.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitDistrict.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitIt.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitIt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitKeyword.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/AdUnitKeyword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/CreativeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/entity/unit_condition/CreativeUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdPlanServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdPlanServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/AdUnitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/CreativeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/service/impl/IUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/utils/CommonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/main/java/com/kh/ad/utils/CommonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/java/com/kh/ad/service/DumpDataService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/kh-ad-service/ad-sponsor/src/test/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,8 +176,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SearchApplication">
-    <configuration name="AdPlanServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AdPlanServiceTest.testGetAdPlan">
+    <configuration name="AdPlanServiceTest.testGetAdPlan" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ad-sponsor" />
       <extension name="coverage">
         <pattern>
@@ -163,7 +187,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.kh.ad.service" />
       <option name="MAIN_CLASS_NAME" value="com.kh.ad.service.AdPlanServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testGetAdPlan" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -237,13 +262,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.AdPlanServiceTest.testGetAdPlan" />
+      <item itemvalue="JUnit.SearchTest.testFetchAds" />
+      <item itemvalue="Spring Boot.SearchApplication" />
+      <item itemvalue="Spring Boot.SponsorApplication" />
+      <item itemvalue="Spring Boot.EurekaApplication" />
+      <item itemvalue="Spring Boot.DashboardApplication" />
+      <item itemvalue="Spring Boot.ZuulGateWayApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.DashboardApplication" />
         <item itemvalue="Spring Boot.ZuulGateWayApplication" />
         <item itemvalue="Spring Boot.EurekaApplication" />
+        <item itemvalue="JUnit.AdPlanServiceTest.testGetAdPlan" />
         <item itemvalue="JUnit.SearchTest.testFetchAds" />
-        <item itemvalue="JUnit.AdPlanServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -300,14 +334,9 @@
       <workItem from="1610328691115" duration="9755000" />
       <workItem from="1610339416428" duration="2007000" />
       <workItem from="1610355323912" duration="1916000" />
-      <workItem from="1610418380952" duration="9446000" />
-    </task>
-    <task id="LOCAL-00006" summary="创意服务功能实现">
-      <created>1609815660847</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1609815660847</updated>
+      <workItem from="1610418380952" duration="12342000" />
+      <workItem from="1610445538363" duration="124000" />
+      <workItem from="1610500495885" duration="17448000" />
     </task>
     <task id="LOCAL-00007" summary="创意与推广单元关联服务功能实现">
       <created>1609817024046</created>
@@ -645,7 +674,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610356474798</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="功能测试">
+      <created>1610432954037</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1610432954037</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -701,7 +737,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="全量索引加载的实现" />
     <MESSAGE value="格式化" />
     <MESSAGE value="使用开源工具监听Binlog" />
     <MESSAGE value="构造解析Binlog使用到的模板文件" />
@@ -726,7 +761,8 @@
     <MESSAGE value="填充检索服务响应对象" />
     <MESSAGE value="完善广告检索服务" />
     <MESSAGE value="Dashboard模块的实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dashboard模块的实现" />
+    <MESSAGE value="功能测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="功能测试" />
   </component>
   <component name="WindowStateProjectService">
     <state x="111" y="262" key="#Assign_Data_Sources" timestamp="1609734502910">
@@ -761,66 +797,66 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="340" y="332" width="550" height="292" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1609831829064" />
-    <state x="841" y="140" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610432898226">
+    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2" timestamp="1610523495468">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="841" y="140" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610432898226" />
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610356318937">
+    <state x="320" y="145" width="968" height="810" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1610523495468" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog" timestamp="1610523459372">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610356318937" />
+    <state x="57" y="50" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610523459372" />
     <state x="1297" y="442" key="FileChooserDialogImpl" timestamp="1610343461729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1297" y="442" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1610343461729" />
-    <state width="1293" height="228" key="GridCell.Tab.0.bottom" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.0.bottom" timestamp="1610522936719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="1293" height="228" key="GridCell.Tab.0.center" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936719" />
+    <state width="1293" height="327" key="GridCell.Tab.0.center" timestamp="1610522936719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="1293" height="228" key="GridCell.Tab.0.left" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936719" />
+    <state width="1293" height="327" key="GridCell.Tab.0.left" timestamp="1610522936718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="1293" height="228" key="GridCell.Tab.0.right" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936718" />
+    <state width="1293" height="327" key="GridCell.Tab.0.right" timestamp="1610522936719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="1293" height="228" key="GridCell.Tab.1.bottom" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936719" />
+    <state width="1293" height="327" key="GridCell.Tab.1.bottom" timestamp="1610522936719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="1293" height="228" key="GridCell.Tab.1.center" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936719" />
+    <state width="1293" height="327" key="GridCell.Tab.1.center" timestamp="1610522936719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="1293" height="228" key="GridCell.Tab.1.left" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936719" />
+    <state width="1293" height="327" key="GridCell.Tab.1.left" timestamp="1610522936719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="1293" height="228" key="GridCell.Tab.1.right" timestamp="1610431767307">
+    <state width="1293" height="327" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936719" />
+    <state width="1293" height="327" key="GridCell.Tab.1.right" timestamp="1610522936719">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1293" height="228" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610431767307" />
-    <state width="750" height="228" key="GridCell.Tab.2.bottom" timestamp="1610431309859">
+    <state width="1293" height="327" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610522936719" />
+    <state width="1293" height="327" key="GridCell.Tab.2.bottom" timestamp="1610522727231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="750" height="228" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
-    <state width="750" height="228" key="GridCell.Tab.2.center" timestamp="1610431309859">
+    <state width="1293" height="327" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1610522727231" />
+    <state width="1293" height="327" key="GridCell.Tab.2.center" timestamp="1610522727231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="750" height="228" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
-    <state width="750" height="228" key="GridCell.Tab.2.left" timestamp="1610431309859">
+    <state width="1293" height="327" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1610522727231" />
+    <state width="1293" height="327" key="GridCell.Tab.2.left" timestamp="1610522727231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="750" height="228" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
-    <state width="750" height="228" key="GridCell.Tab.2.right" timestamp="1610431309859">
+    <state width="1293" height="327" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1610522727231" />
+    <state width="1293" height="327" key="GridCell.Tab.2.right" timestamp="1610522727231">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="750" height="228" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610431309859" />
+    <state width="1293" height="327" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1610522727231" />
     <state width="220" height="477" key="HiddenNamespacesPopup" timestamp="1609734488609">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -833,14 +869,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1610008005284" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610356493572">
+    <state width="498" height="488" key="SwitcherDM" timestamp="1610442658763">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610356493572" />
-    <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1610328691450">
+    <state width="498" height="488" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1610442658763" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1610432974988">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="351" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610328691450" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610432974988" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610520063256">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610520063256" />
+    <state x="351" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1610500539429">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="351" y="349" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1610500539429" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609894916175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -857,18 +901,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="361" key="git4idea.ui.GitTagDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1609745809407" />
-    <state x="549" y="420" width="1250" height="620" key="new project wizard" timestamp="1610355785560">
+    <state x="287" y="91" width="1250" height="620" key="new project wizard" timestamp="1610444211286">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="549" y="420" width="1250" height="620" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1610355785560" />
+    <state x="287" y="91" width="1250" height="620" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1610444211286" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1610003576887">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610003576887" />
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1610420641262">
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup" timestamp="1610521579925">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610420641262" />
+    <state x="241" y="238" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1610521579925" />
     <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1609745694064">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
